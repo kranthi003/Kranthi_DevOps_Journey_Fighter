@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Z200876
+Build-Jdk: 1.8.0_181
+Extension-Name: deploy
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: deploy
+Implementation-Version: 1.15
+Group-Id: org.jenkins-ci.plugins
+Short-Name: deploy
+Long-Name: Deploy to container Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Deploy+Plugin
+Compatible-Since-Version: 1.13
+Plugin-Version: 1.15
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: credentials:2.1.13,structs:1.5
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Meikel Bode:edobm:,Danie
+ l Barth:devkiela:,Leandro Kersting de Freitas:frekele:
+

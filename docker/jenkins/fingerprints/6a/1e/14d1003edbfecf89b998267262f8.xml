@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-24 18:47:25.75 UTC</timestamp>
+  <original>
+    <name>Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:webapp</name>
+    <number>1</number>
+  </original>
+  <md5sum>6a1e14d1003edbfecf89b998267262f8</md5sum>
+  <fileName>com.example.maven-project:webapp.war</fileName>
+  <usages>
+    <entry>
+      <string>Kranthi_Deploy_on_Container_Using_Ansible</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:webapp</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,10 @@
+Started on Apr 25, 2020 12:43:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision ee14388d082eb19b89199ffdf3093047eee0b2b6 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/kranthi003/hello-world.git # timeout=10
+Found 1 remote heads on https://github.com/kranthi003/hello-world.git
+[poll] Latest remote head revision on refs/heads/master is: ee14388d082eb19b89199ffdf3093047eee0b2b6 - already built by 1
+Done. Took 0.4 sec
+No changes

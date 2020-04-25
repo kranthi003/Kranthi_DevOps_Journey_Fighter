@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Oleg
+Build-Jdk: 1.8.0_201
+Extension-Name: javadoc
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: javadoc
+Implementation-Version: 1.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: javadoc
+Long-Name: Javadoc Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Javadoc+Plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.5
+Hudson-Version: 2.60.3
+Jenkins-Version: 2.60.3
+Plugin-Developers: 
+

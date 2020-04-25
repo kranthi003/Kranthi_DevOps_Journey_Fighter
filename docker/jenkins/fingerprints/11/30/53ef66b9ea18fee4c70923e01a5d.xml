@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-24 03:13:26.396 UTC</timestamp>
+  <original>
+    <name>Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:server</name>
+    <number>5</number>
+  </original>
+  <md5sum>113053ef66b9ea18fee4c70923e01a5d</md5sum>
+  <fileName>com.example.maven-project:server.jar</fileName>
+  <usages>
+    <entry>
+      <string>Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:server</string>
+      <ranges>5</ranges>
+    </entry>
+    <entry>
+      <string>Kranthi_Deploy_Tomcat_Server_Container</string>
+      <ranges>5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

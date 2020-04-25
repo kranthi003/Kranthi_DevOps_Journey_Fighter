@@ -1,0 +1,44 @@
+Started at Sat Apr 25 00:27:22 UTC 2020
+Processing Kranthi_Deploy_Docker_Container(Runtime)
+Offering Kranthi_Deploy_Docker_Container(Runtime) to Project Build Discarder
+Processing Kranthi_Deploy_on_Container_Using_Ansible
+Offering Kranthi_Deploy_on_Container_Using_Ansible to Project Build Discarder
+Processing Kranthi_Deploy_on_DOcker
+Offering Kranthi_Deploy_on_DOcker to Project Build Discarder
+Processing Kranthi_Deploy_Tomcat_Server_Container
+Offering Kranthi_Deploy_Tomcat_Server_Container to Project Build Discarder
+Processing Kranthi_Job
+Offering Kranthi_Job to Project Build Discarder
+Processing Kranthi_Maven_Job
+Offering Kranthi_Maven_Job to Project Build Discarder
+Processing Kranthi_Maven_Job/com.example.maven-project:maven-project
+Offering Kranthi_Maven_Job/com.example.maven-project:maven-project to Project Build Discarder
+Processing Kranthi_Maven_Job/com.example.maven-project:server
+Offering Kranthi_Maven_Job/com.example.maven-project:server to Project Build Discarder
+Processing Kranthi_Maven_Job/com.example.maven-project:webapp
+Offering Kranthi_Maven_Job/com.example.maven-project:webapp to Project Build Discarder
+Processing Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:maven-project
+Offering Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:maven-project to Project Build Discarder
+Processing Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:server
+Offering Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:server to Project Build Discarder
+Processing Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:webapp
+Offering Kranthi_Deploy_Tomcat_Server_Container/com.example.maven-project:webapp to Project Build Discarder
+Processing Kranthi_Deploy_on_DOcker/com.example.maven-project:maven-project
+Offering Kranthi_Deploy_on_DOcker/com.example.maven-project:maven-project to Project Build Discarder
+Processing Kranthi_Deploy_on_DOcker/com.example.maven-project:server
+Offering Kranthi_Deploy_on_DOcker/com.example.maven-project:server to Project Build Discarder
+Processing Kranthi_Deploy_on_DOcker/com.example.maven-project:webapp
+Offering Kranthi_Deploy_on_DOcker/com.example.maven-project:webapp to Project Build Discarder
+Processing Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:maven-project
+Offering Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:maven-project to Project Build Discarder
+Processing Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:server
+Offering Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:server to Project Build Discarder
+Processing Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:webapp
+Offering Kranthi_Deploy_on_Container_Using_Ansible/com.example.maven-project:webapp to Project Build Discarder
+Processing Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:maven-project
+Offering Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:maven-project to Project Build Discarder
+Processing Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:server
+Offering Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:server to Project Build Discarder
+Processing Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:webapp
+Offering Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:webapp to Project Build Discarder
+Finished at Sat Apr 25 00:27:22 UTC 2020. 1ms

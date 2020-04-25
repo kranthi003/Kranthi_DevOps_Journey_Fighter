@@ -1,0 +1,7 @@
+Started by user [8mha:////4P+AQAv/BU+DBQ2BwQsrlkGNJkSCFSJ1P2XN3iFzuODIAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYB/dLi1CL97KLEvJKMTAMDYwDueUy4xQAAAA==[0mKranthi Kumar
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Kranthi_First_Job
+[Kranthi_First_Job] $ /bin/sh -xe /tmp/jenkins1130979480459630446.sh
++ echo 'Hi Kranthi .. Great Boy'
+Hi Kranthi .. Great Boy
+Finished: SUCCESS
