@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10272" started-at="2020-07-12T12:54:20Z" finished-at="2020-07-12T12:54:30Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10272" started-at="2020-07-12T12:54:20Z" finished-at="2020-07-12T12:54:30Z">
+      <class name="answers.RestAssuredPostTest">
+        <test-method status="PASS" signature="createRequestSpecification()[pri:0, instance:answers.RestAssuredPostTest@cb5822]" name="createRequestSpecification" is-config="true" duration-ms="844" started-at="2020-07-12T15:54:20Z" finished-at="2020-07-12T15:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method status="PASS" signature="postCarObject_checkResponseHttpStatusCode_expect200()[pri:0, instance:answers.RestAssuredPostTest@cb5822]" name="postCarObject_checkResponseHttpStatusCode_expect200" duration-ms="4630" started-at="2020-07-12T15:54:21Z" finished-at="2020-07-12T15:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCarObject_checkResponseHttpStatusCode_expect200 -->
+      </class> <!-- answers.RestAssuredPostTest -->
+      <class name="answers.RestAssuredAuthorization">
+        <test-method status="FAIL" signature="createRequestSpecification()[pri:0, instance:answers.RestAssuredAuthorization@4b9e13df]" name="createRequestSpecification" is-config="true" duration-ms="0" started-at="2020-07-12T15:54:25Z" finished-at="2020-07-12T15:54:25Z">
+          <exception class="java.net.ConnectException">
+            <message>
+              <![CDATA[Connection refused: connect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at answers.RestAssuredAuthorization.createRequestSpecification(RestAssuredAuthorization.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.ConnectException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method status="SKIP" signature="usePreviouslyStoredAuthToken()[pri:0, instance:answers.RestAssuredAuthorization@4b9e13df]" name="usePreviouslyStoredAuthToken" duration-ms="2" started-at="2020-07-12T15:54:27Z" finished-at="2020-07-12T15:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usePreviouslyStoredAuthToken -->
+      </class> <!-- answers.RestAssuredAuthorization -->
+      <class name="answers.RestAssuredGetTest">
+        <test-method status="PASS" signature="createRequestSpecification()[pri:0, instance:answers.RestAssuredGetTest@2b98378d]" name="createRequestSpecification" is-config="true" duration-ms="0" started-at="2020-07-12T15:54:27Z" finished-at="2020-07-12T15:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method status="PASS" signature="requestUsZipCode90210_checkResponseCode_expect200()[pri:0, instance:answers.RestAssuredGetTest@2b98378d]" name="requestUsZipCode90210_checkResponseCode_expect200" duration-ms="2690" started-at="2020-07-12T15:54:27Z" finished-at="2020-07-12T15:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestUsZipCode90210_checkResponseCode_expect200 -->
+      </class> <!-- answers.RestAssuredGetTest -->
+      <class name="answers.RestAssuredGetDataProviderTest">
+        <test-method status="PASS" signature="createRequestSpecification()[pri:0, instance:answers.RestAssuredGetDataProviderTest@475530b9]" name="createRequestSpecification" is-config="true" duration-ms="1" started-at="2020-07-12T15:54:30Z" finished-at="2020-07-12T15:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method status="SKIP" signature="checkStateForCountryCodeAndZipCode(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:answers.RestAssuredGetDataProviderTest@475530b9]" name="checkStateForCountryCodeAndZipCode" duration-ms="0" started-at="2020-07-12T15:54:30Z" finished-at="2020-07-12T15:54:30Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method checkStateForCountryCodeAndZipCode requires 3 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method checkStateForCountryCodeAndZipCode requires 3 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStateForCountryCodeAndZipCode -->
+      </class> <!-- answers.RestAssuredGetDataProviderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

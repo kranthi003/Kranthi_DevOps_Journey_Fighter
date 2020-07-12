@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="answers.RestAssuredPostTest"/>
+      <class name="answers.RestAssuredAuthorization"/>
+      <class name="answers.RestAssuredGetTest"/>
+      <class name="answers.RestAssuredGetDataProviderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="answers.RestAssuredGetDataProviderTest">
+        <methods>
+          <include name="createRequestSpecification"/>
+          <include name="checkStateForCountryCodeAndZipCode"/>
+        </methods>
+      </class> <!-- answers.RestAssuredGetDataProviderTest -->
+      <class name="answers.RestAssuredAuthorization">
+        <methods>
+          <include name="usePreviouslyStoredAuthToken"/>
+          <include name="createRequestSpecification"/>
+        </methods>
+      </class> <!-- answers.RestAssuredAuthorization -->
+      <class name="answers.RestAssuredGetTest">
+        <methods>
+          <include name="createRequestSpecification"/>
+        </methods>
+      </class> <!-- answers.RestAssuredGetTest -->
+      <class name="answers.RestAssuredPostTest">
+        <methods>
+          <include name="createRequestSpecification"/>
+        </methods>
+      </class> <!-- answers.RestAssuredPostTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
