@@ -1,9 +1,0 @@
-commit 1af2255db3ed3c59d923d690b9a25c7dad8a3ed3
-tree c82009e80b20bf47d83849719338f3a056bdbac9
-parent e154d292bc19a41f9014cca10077d52ceb3b486d
-author kranthi003 <kumar.kranthi003@gmail.com> 2020-04-24 06:05:53 +0300
-committer GitHub <noreply@github.com> 2020-04-24 06:05:53 +0300
-
-    Update index.jsp
-
-:100644 100644 28600372ea9008d85b1a9a35c01ea4e04df28d73 79d2078e2292df45bbe0b7ff898e469d4cde6a8c M	webapp/src/main/webapp/index.jsp
