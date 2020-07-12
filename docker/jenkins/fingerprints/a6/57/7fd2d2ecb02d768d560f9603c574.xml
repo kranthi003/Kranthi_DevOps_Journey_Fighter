@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-24 01:24:37.838 UTC</timestamp>
+  <original>
+    <name>Kranthi_Maven_Job/com.example.maven-project:server</name>
+    <number>2</number>
+  </original>
+  <md5sum>a6577fd2d2ecb02d768d560f9603c574</md5sum>
+  <fileName>com.example.maven-project:server.jar</fileName>
+  <usages>
+    <entry>
+      <string>Kranthi_Maven_Job/com.example.maven-project:server</string>
+      <ranges>2</ranges>
+    </entry>
+    <entry>
+      <string>Kranthi_Maven_Job</string>
+      <ranges>2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

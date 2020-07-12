@@ -1,0 +1,148 @@
+=======================================================================================================================================
+=======================================================================================================================================
+=======================================================================================================================================
+==========================================================================================
+Docker Documentation
+==========================================================================================
+==========================================================================================
+Get Started - Docker overview
+==========================================================================================
+
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
+
+Docker Engine is a client-server application with these major components:
+A server which is a type of long-running program called a daemon process (the dockerd command).
+A REST API which specifies interfaces that programs can use to talk to the daemon and instruct it what to do.
+A command line interface (CLI) client (the docker command).
+
+
+The daemon (dockerd) creates and manages Docker objects, such as images, containers, networks, and volumes.
+The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface.
+
+
+Docker registries --> When you use the docker pull or docker run commands, the required images are pulled from your configured registry.
+				  --> you use the docker push command, your image is pushed to your configured registry.
+				  
+Docker Containers --> 
+				  $ docker run -i -t ubuntu /bin/bash
+				  The following command runs an ubuntu container, attaches interactively to your local command-line session, and runs /bin/bash.
+							1. it pulls image locally if it doesn't exist.
+							2. docker creates a new container as though had run a "docker container create"
+							3. docker allocates read writes filesystem to the container.
+							4. docker creates network interface to connect the container to the default network. By default, containers can connect to external networks using the host machine’s network connection.
+							5. docker starts the container and executes /bin/bash.
+SERVICES		-->
+					Services allow you to scale containers across multiple Docker daemons,, which all work together as a swarm with multiple managers and workers
+					Each member of a swarm is a Docker daemon, and the daemons all communicate using the Docker API.
+					A service allows you to define the desired state, such as the number of replicas of the service that must be available at any given time. 
+					By default, the service is load-balanced across all worker nodes.
+					Docker Engine supports swarm mode in Docker 1.12 and higher.
+					
+Namespaces		--> 
+						Docker uses a technology called namespaces to provide the isolated workspace called the container.
+						Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
+
+						Docker Engine uses namespaces such as the following on Linux:
+
+						The pid namespace: Process isolation (PID: Process ID).
+						The net namespace: Managing network interfaces (NET: Networking).
+						The ipc namespace: Managing access to IPC resources (IPC: InterProcess Communication).
+						The mnt namespace: Managing filesystem mount points (MNT: Mount).
+						The uts namespace: Isolating kernel and version identifiers. (UTS: Unix Timesharing System).
+						
+Control groups   -->
+						Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints. For example, you can limit the memory available to a specific container.
+
+Union file systems -->
+						Docker Engine uses UnionFS to provide the building blocks for containers. Docker Engine can use multiple UnionFS variants, including AUFS, btrfs, vfs, and DeviceMapper.
+					
+Container format	--> 
+						Docker Engine combines the namespaces, control groups, and UnionFS into a wrapper called a container format. 
+						The default container format is libcontainer.
+						In the future, Docker may support other container formats by integrating with technologies such as BSD Jails or Solaris Zones.
+						
+
+==========================================================================================
+Get Started - Orientation and setup						
+==========================================================================================
+
+Containerization is increasingly popular because containers are:
+
+Flexible: Even the most complex applications can be containerized.
+Lightweight: Containers leverage and share the host kernel, making them much more efficient in terms of system resources than virtual machines.
+Portable: You can build locally, deploy to the cloud, and run anywhere.
+Loosely coupled: Containers are highly self sufficient and encapsulated, allowing you to replace or upgrade one without disrupting others.
+Scalable: You can increase and automatically distribute container replicas across a datacenter.
+Secure: Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
+
+
+Example of creating an image 					
+==========================================================================================
+		git clone  v1 https://github.com/docker-training/node-bulletin-board
+		cd node-bulletin-board/bulletin-board-app			
+		docker image build -t bulletinboard:1.0 .
+		docker container run --name bulletinboard -d -p 8000:8080 imageid
+		curl -I http://localhost:8000
+
+		RUN executes command(s) in a new layer and creates a new image. E.g., it is often used for installing software packages.
+		CMD sets default command and/or parameters, which can be overwritten from command line when docker container runs.
+		ENTRYPOINT configures a container that will run as an executable.
+		
+
+	PUSH image to docker repositary
+	=========================================================================================
+	docker image tag httpd kranthi003/bulletin   { httpd is imagename , kranthi003/bulletin is repositary directory}  --> this will tag the image before pushing 	
+				image to respository
+	docker image push kranthi/bulletin  { this will push image to respository }
+	docker login	{ user must be do login before pushing image}
+	docker pull kranthi003/bulletin:latest  { this will pull latest images}
+	
+
+
+==========================================================================================
+==========================================================================================
+Develop with Docker
+==========================================================================================	
+
+Differences in development and production environments
+Development																	Production
+Use bind mounts to give your container access to your source code.			Use volumes to store container data.
+Use Docker Desktop for Mac or Docker Desktop for Windows.						Use Docker Engine - Enterprise if possible, with userns mapping for greater isolation of Docker processes from host processes.
+Don’t worry about time drift.	Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server. If you use swarm services, also ensure that each Docker node syncs its clocks to the same time source as the containers.
+
+
+==========================================================================================
+==========================================================================================
+Develop with Docker  - Best practices for writing Dockerfiles
+==========================================================================================	
+		
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
+==========================================================================================
+Develop with Docker  - Create a base image
+==========================================================================================	
+A parent image is the image that your image is based on. It refers to the contents of the FROM directive in the Dockerfile. Each subsequent declaration in the Dockerfile modifies this parent image. Most Dockerfiles start from a parent image, rather than a base image. However, the terms are sometimes used interchangeably.
+
+A base image has FROM scratch in its Dockerfile.
+
+
+
+		
+		
+		
+		
+		
+
+		
+		
+
+
+		
+					
+					
+					
+					
+					
+					
+					
+				  

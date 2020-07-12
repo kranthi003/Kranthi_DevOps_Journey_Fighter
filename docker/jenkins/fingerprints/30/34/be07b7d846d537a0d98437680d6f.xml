@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-24 15:07:35.140 UTC</timestamp>
+  <original>
+    <name>Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:server</name>
+    <number>2</number>
+  </original>
+  <md5sum>3034be07b7d846d537a0d98437680d6f</md5sum>
+  <fileName>com.example.maven-project:server.jar</fileName>
+  <usages>
+    <entry>
+      <string>Kranthi_Deploy_Docker_Container(Runtime)</string>
+      <ranges>2</ranges>
+    </entry>
+    <entry>
+      <string>Kranthi_Deploy_Docker_Container(Runtime)/com.example.maven-project:server</string>
+      <ranges>2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
