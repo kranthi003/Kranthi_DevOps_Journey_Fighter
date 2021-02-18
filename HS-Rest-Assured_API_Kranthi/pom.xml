@@ -13,7 +13,7 @@
 		<restassured.version>4.2.0</restassured.version>
 		<junit.version>4.12</junit.version>
 		<junit.dataprovider.version>2.6</junit.dataprovider.version>
-		<jackson.databind.version>2.10.3</jackson.databind.version>
+		<jackson.databind.version>2.10.5.1</jackson.databind.version>
 		<wiremock.version>2.26.2</wiremock.version>
 		<slf4j.version>1.7.30</slf4j.version>
 		<lombok.version>1.18.12</lombok.version>
